@@ -1,0 +1,37 @@
+{
+    "name": "luinuxscl/openrouter",
+    "description": "Paquete para integrar el servicio de conexión con OpenRouter",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Luinuxscl\\OpenRouter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luis Sepulveda",
+            "email": "lsepulveda@outlook.com",
+            "homepage": "https://github.com/luinuxscl",
+            "role": "developer"
+        }
+    ],
+    "homepage": "https://like.cl",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luinuxscl\\OpenRouter\\Providers\\OpenRouterServiceProvider"
+            ],
+            "aliases": {
+                "OpenRouter": "Luinuxscl\\OpenRouter\\Facades\\OpenRouter"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+} 
